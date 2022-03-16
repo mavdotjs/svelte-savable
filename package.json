@@ -4,8 +4,8 @@
   "description": "This is a svelte lib used for saving writables",
   "main": "index.js",
   "scripts": {
-    "build": "tsc",
-    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "build": "npm run format && tsc && npm run lint",
+    "format": "prettier --write \"src/**/*.ts\"",
     "lint": "eslint"
   },
   "repository": {

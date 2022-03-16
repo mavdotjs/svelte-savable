@@ -1,5 +1,8 @@
 import type { Writable, StartStopNotifier, Unsubscriber } from 'svelte/types/runtime/store';
 import { writable } from 'svelte/store';
+function jsonparse(v: string | null | number) {
+  return JSON.parse(v?.toString() || 'null');
+}
 /**
  * @author maverick-dev-55
  * @description attach a writable to localstorage
