@@ -1,8 +1,8 @@
 {
   "name": "svelte-savable",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "This is a svelte lib used for saving writables",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "build": "npm run format && tsc && npm run lint",
     "format": "prettier --write \"src/**/*.ts\"",
